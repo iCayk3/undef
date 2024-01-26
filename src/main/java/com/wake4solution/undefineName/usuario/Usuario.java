@@ -20,4 +20,17 @@ public class Usuario {
     private String usuario;
 
     private String senha;
+
+    public Usuario(DadosUsuario dados){
+        this.usuario = dados.usuario();
+        this.senha = dados.senha();
+    }
+
+    @Override
+    public String toString() {
+        return "Usuario{" +
+                "usuario='" + usuario + '\'' +
+                ", senha='" + senha + '\'' +
+                '}';
+    }
 }
